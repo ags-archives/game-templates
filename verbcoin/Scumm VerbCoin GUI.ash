@@ -1,7 +1,7 @@
 //===================================================================
 // *** AGS MODULE SCRIPT HEADER ***
 //
-// Module:  Scumm VerbCoin GUI v1.5
+// Module:  Scumm VerbCoin GUI v1.6.0
 //
 // Author:  Tom "Electroshokker" Vandepoele
 //
@@ -16,6 +16,15 @@
 // 2007-12-01 v1.3      Doubleclick code added for 'Act' property
 // 2007-12-16 v1.4      Minor bugfix - click in inventory executed look action at hotspots under inventory
 // 2007-12-22 v1.5      Minor bugfix - click on empty spot in inventory and move over item caused item to be selected
+// 2008-04-16 v1.5.1    Minor bugfix - resolution 800x600 now supported
+// 2008-04-16 v1.5.2    Minor bugfix - walk-to function no longer gets blocked after clicking 
+//                                     on something with property 'act' set to true
+// 2008-04-16 v1.5.3    Minor bugfix - Code cleaned up so it's resolution independent. Bring on 1024x768, Chris! ;-)
+// 2008-05-31 v1.5.4    Minor bugfix - Property action displayed in the @overhotspot@ label now shows correctly
+//                                     when moving over the verbcoin gui (sometimes it displayed the action label of
+//                                     the hotspot next to it
+// 2008-06-14 v1.5.x    Many bugfixes
+// 2008-06-15 v1.6.0    New feature: the entire module can be disabled with a simple function call
 //
 // 3 License
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -57,6 +66,7 @@ struct SCUMM_VERBCOIN_GUI {
    import static function Select();             //Select item or use item on something else
    import static function Deselect();           //Deselect item or quit inventory
    import static function RunInteraction(CursorMode);
+   import static function DisableVerbCoinGUI(bool value = false); //enables/disables the module
 };
 
 import bool doubleclick;
