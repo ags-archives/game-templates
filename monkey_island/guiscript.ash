@@ -1,6 +1,10 @@
+// TODO: DOC:
+// int lang = eLangES; GUI_LANGUAGE
+// bool oldschool_inv_clicks
+
 // Script header for the 9-verb MI-style template
 //
-// Version: 1.2.1
+// Version: 1.3
 //
 // Authors: 
 //   Proskrito      first release
@@ -20,12 +24,18 @@
 //   The graphics included may be freely used and altered in any way.
 //
 //
+// Translators:
+//   Spanish - Josemarg, Unai, Poplamanopla
+//   German  - Abstauber
+//   French  - Monsieur OUXX
+//   Italian - Paolo
+//
 // Contact and Support: 
 //   Please visit the AGS-Forums at: http://adventuregamestudio.co.uk
 //
 //
 // Dependencies:
-//   AGS 3.2 RC3 or later
+//   AGS 3.2 or later
 //
 //
 // Revision History
@@ -40,16 +50,18 @@
 // 1.1.2  added AGS 3.1 support
 // 1.2    updated fonts to work in high-res
 //        code cleanup, moved options from header to script
-//
 // 1.2.1  fixed high-res related inventory bug
 //        fixed save GUI glitch
 //        simplified inventory variables 
-//        
+//
+// 1.3    added GUI translations for Spanish, French , Italian and German
+//        slightly expanded buttons in options GUI
+//        added old school inventory handling
 //
 // Licence:
 //
 //   9-verb MI-style template
-//   Copyright (c) 2006-2010 The AGS-Community
+//   Copyright (c) 2006-2011 The AGS-Community
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
@@ -95,6 +107,14 @@ enum eDirection {
   eDir_Left,
   eDir_Right,
   eDir_Down
+};
+
+enum eLanguage {
+  eLangEN, 
+  eLangDE,
+  eLangES, 
+  eLangIT, 
+  eLangFR
 };
 
 // ============================= Math & Helper Functions =========================================
@@ -165,8 +185,9 @@ import int any_click_on_door(int door_id, int act_object, int x, int y, eDirecti
 // ============================= translation ====================================================
 import String clearToSpace(String text);
 import int getInteger();
-import function TranslateAction(int action);
+import function TranslateAction(int action, int tr_lang=eLangEN);
 import function AdjustLanguage();
+import function AdjustGUIText();
 
 // ============================= Extensions functions ==========================================
 import function RemoveExtension();

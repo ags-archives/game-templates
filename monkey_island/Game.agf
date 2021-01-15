@@ -22,7 +22,7 @@
       <PixelPerfect>True</PixelPerfect>
       <WhenInterfaceDisabled>Unchanged</WhenInterfaceDisabled>
       <GUIAlphaStyle>Classic</GUIAlphaStyle>
-      <RunGameLoopsWhileDialogOptionsDisplayed>False</RunGameLoopsWhileDialogOptionsDisplayed>
+      <RunGameLoopsWhileDialogOptionsDisplayed>True</RunGameLoopsWhileDialogOptionsDisplayed>
       <InventoryHotspotMarkerStyle>None</InventoryHotspotMarkerStyle>
       <InventoryHotspotMarkerSprite>0</InventoryHotspotMarkerSprite>
       <InventoryHotspotMarkerDotColor>0</InventoryHotspotMarkerDotColor>
@@ -45,7 +45,7 @@
       <DialogOptionsBullet>0</DialogOptionsBullet>
       <SkipSpeech>MouseOrKeyboardOrTimer</SkipSpeech>
       <SpeechStyle>Lucasarts</SpeechStyle>
-      <NumberDialogOptions>True</NumberDialogOptions>
+      <NumberDialogOptions>False</NumberDialogOptions>
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
       <SpeechPortraitSide>Left</SpeechPortraitSide>
       <TextWindowGUI>0</TextWindowGUI>
@@ -990,11 +990,11 @@
             <Font>0</Font>
             <PushedImage>0</PushedImage>
             <MouseoverImage>0</MouseoverImage>
-            <Image>209</Image>
+            <Image>192</Image>
             <Text>Save</Text>
             <Height>16</Height>
-            <Width>63</Width>
-            <Left>212</Left>
+            <Width>75</Width>
+            <Left>200</Left>
             <Top>33</Top>
             <ZOrder>0</ZOrder>
             <ID>0</ID>
@@ -1010,11 +1010,11 @@
             <Font>0</Font>
             <PushedImage>0</PushedImage>
             <MouseoverImage>0</MouseoverImage>
-            <Image>209</Image>
+            <Image>192</Image>
             <Text>Load</Text>
             <Height>16</Height>
-            <Width>63</Width>
-            <Left>212</Left>
+            <Width>75</Width>
+            <Left>200</Left>
             <Top>48</Top>
             <ZOrder>1</ZOrder>
             <ID>1</ID>
@@ -1030,11 +1030,11 @@
             <Font>0</Font>
             <PushedImage>0</PushedImage>
             <MouseoverImage>0</MouseoverImage>
-            <Image>209</Image>
+            <Image>192</Image>
             <Text>Resume</Text>
             <Height>16</Height>
-            <Width>63</Width>
-            <Left>212</Left>
+            <Width>75</Width>
+            <Left>200</Left>
             <Top>98</Top>
             <ZOrder>2</ZOrder>
             <ID>2</ID>
@@ -1050,11 +1050,11 @@
             <Font>0</Font>
             <PushedImage>0</PushedImage>
             <MouseoverImage>0</MouseoverImage>
-            <Image>209</Image>
-            <Text>Quit</Text>
+            <Image>192</Image>
+            <Text>Quit‰t÷</Text>
             <Height>16</Height>
-            <Width>63</Width>
-            <Left>212</Left>
+            <Width>75</Width>
+            <Left>200</Left>
             <Top>78</Top>
             <ZOrder>10</ZOrder>
             <ID>3</ID>
@@ -1141,11 +1141,11 @@
             <Font>0</Font>
             <PushedImage>0</PushedImage>
             <MouseoverImage>0</MouseoverImage>
-            <Image>209</Image>
+            <Image>192</Image>
             <Text>Default</Text>
             <Height>16</Height>
-            <Width>63</Width>
-            <Left>212</Left>
+            <Width>75</Width>
+            <Left>200</Left>
             <Top>14</Top>
             <ZOrder>8</ZOrder>
             <ID>9</ID>
@@ -1161,11 +1161,11 @@
             <Font>0</Font>
             <PushedImage>0</PushedImage>
             <MouseoverImage>0</MouseoverImage>
-            <Image>209</Image>
+            <Image>192</Image>
             <Text>Restart</Text>
             <Height>16</Height>
-            <Width>63</Width>
-            <Left>212</Left>
+            <Width>75</Width>
+            <Left>200</Left>
             <Top>63</Top>
             <ZOrder>9</ZOrder>
             <ID>10</ID>
@@ -1931,7 +1931,7 @@ return
 
 
 @2
-Bman: Good for you. 
+Bman: Good for you.
 Ego: I know.
 return
 
@@ -1948,14 +1948,15 @@ option-on 4
 return
 
 @4
-Bman: You already have the envelope. 
+Bman: You already have the envelope.
 Bman: Just open it and use the key.
 Ego: Okay.
 return
 
 @5
 Bman: Bye.
-stop]]></Script>
+stop
+]]></Script>
         <DialogOptions>
           <DialogOption>
             <ID>1</ID>
@@ -2512,7 +2513,7 @@ stop]]></Script>
           </SpriteFolder>
           <SpriteFolder Name="MainGUI">
             <SubFolders>
-              <SpriteFolder Name="English">
+              <SpriteFolder Name="en">
                 <SubFolders />
                 <Sprites>
                   <Sprite Slot="125" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
@@ -2607,7 +2608,7 @@ stop]]></Script>
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
-              <SpriteFolder Name="German">
+              <SpriteFolder Name="de">
                 <SubFolders />
                 <Sprites>
                   <Sprite Slot="156" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
@@ -2707,6 +2708,291 @@ stop]]></Script>
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="es">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="2" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\abrir2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="4" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\usar.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="5" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\abrir.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="6" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\buttonsSPANISH.gif</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="7" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\cerrar2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="8" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\cerrar.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="9" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\coger2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="10" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\coger.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="11" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\dar2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="13" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\empujar2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="14" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\empujar.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="15" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\tirar_h.gif</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="16" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\tirar_n.gif</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="17" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\hablar2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="18" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\hablar.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="75" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\mirar2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="122" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\mirar.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="145" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\botonesSPA\usar2.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="fr">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="149" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_14.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="175" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_44.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="176" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_16.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="177" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_18.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="178" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_24.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="179" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_25.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="180" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_26.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="181" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_42.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="182" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_43.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="183" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphics_fr_44.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="184" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_14.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="185" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_16.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="186" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_18.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="187" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_24.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="188" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_25.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="189" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_26.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="190" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_42.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="191" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\temp\images\gui-graphicsfr_hi_43.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="it">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="193" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_14.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="194" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_44.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="195" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_16.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="196" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_18.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="197" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_24.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="198" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_25.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="199" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_26.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="201" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_42.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="202" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-IT_43.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="200" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_14.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="203" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_16.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="204" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_18.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="205" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_24.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="206" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_25.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="207" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_26.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="213" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_42.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="214" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_43.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="215" Width="45" Height="13" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>D:\temp\btns\images\gui-HI_44.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="123" Width="320" Height="47" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
@@ -2788,6 +3074,11 @@ stop]]></Script>
               <Sprite Slot="212" Width="19" Height="48" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
                 <Source>
                   <FileName>D:\Eigene Dateien\AGS\9Verbs\Add-On\scroll down.bmp</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="192" Width="75" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\temp\btn_empty.bmp</FileName>
                 </Source>
               </Sprite>
             </Sprites>
@@ -3793,7 +4084,7 @@ stop]]></Script>
         <Name>9-Verb MI-Style</Name>
         <Description>9Verb GUI functions</Description>
         <Author>Authors named in header file</Author>
-        <Version>1.2.1</Version>
+        <Version>1.3</Version>
         <Key>1562295785</Key>
         <IsHeader>False</IsHeader>
       </Script>
