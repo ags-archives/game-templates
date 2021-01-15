@@ -35,7 +35,7 @@
 //
 //
 // Dependencies:
-//   AGS 3.2 or later
+//   AGS 3.1 or later
 //
 //
 // Revision History
@@ -53,15 +53,18 @@
 // 1.2.1  fixed high-res related inventory bug
 //        fixed save GUI glitch
 //        simplified inventory variables 
-//
 // 1.3    added GUI translations for Spanish, French , Italian and German
 //        slightly expanded buttons in options GUI
 //        added old school inventory handling
 //
+// 1.3.1  altered the way of supporting the old sound system (from AGS 3.1)
+//        fixed the quit button label
+//        modified the any_click_walk_look_pick function to work with empty strings
+//
 // Licence:
 //
 //   9-verb MI-style template
-//   Copyright (c) 2006-2011 The AGS-Community
+//   Copyright (c) 2006-2013 The AGS-Community
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
@@ -80,6 +83,16 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 // DEALINGS IN THE SOFTWARE.
+
+
+//----------------------------------------------------------------------------
+
+
+// If your version of AGS is >=3.2, the new, object oriented audio system will be used.
+
+#ifver 3.2
+#define USE_OBJECT_ORIENTED_AUDIO
+#endif
 
 
 #define A_COUNT_ 10  // Action Button Count (gMainGUI)
@@ -155,11 +168,11 @@ import int any_click_move(int x, int y, eDirection dir);
 import int any_click_walk(int x, int y, eDirection dir);
 import int any_click_walk_look(int x, int y, eDirection dir, String lookat);
 
-#ifver 3.2
+#ifdef USE_OBJECT_ORIENTED_AUDIO
   import int any_click_walk_look_pick(int x, int y, eDirection dir, String lookat, int objectID, InventoryItem*item, AudioClip *sound=false);
 #endif
 
-#ifnver 3.2
+#ifndef USE_OBJECT_ORIENTED_AUDIO
   import int any_click_walk_look_pick(int x, int y, eDirection dir, String lookat, int objectID, InventoryItem*item, int sound=0);
 #endif
 
@@ -175,11 +188,11 @@ import function init_object(int door_id, int act_object);
 import function set_door_strings(String lookat='0', String islocked='0', String wrongitem='0', String closefirst='0', String unlock = '0', String relock='0');
 import String get_door_strings(String what_type);
 import int any_click_on_door(int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir);
-#ifver 3.2
+#ifdef USE_OBJECT_ORIENTED_AUDIO
     import int any_click_on_door_special (int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir, AudioClip *opensound, AudioClip *closesound, int key, int closevalue);
 #endif
 
-#ifnver 3.2
+#ifndef USE_OBJECT_ORIENTED_AUDIO
     import int any_click_on_door_special (int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir, int opensound=0, int closesound=0, int key, int closevalue);
 #endif
 // ============================= translation ====================================================
