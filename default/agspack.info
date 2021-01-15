@@ -1,10 +1,10 @@
 info=infofile created by :::AGStract 0.9.3 by rofl0r:::
 info=this file is needed to reconstruct the packfile with AGSpack
-agspackfile=engines/ags302/Default Game.agt
+agspackfile=engines/ags302sp1/Default Game.agt
 agsversion=20
 filecount=14
 datafilecount=1
-df0=engines/ags302/Default Game.agt
+df0=engines/ags302sp1/Default Game.agt
 fileno0=0
 fileno1=0
 fileno2=0
