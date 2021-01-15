@@ -3,9 +3,9 @@
 <AGSEditorDocument Version="3.0.2.2">
   <Game>
     <Settings>
-      <GameName>test</GameName>
-      <UniqueID>9403890</UniqueID>
-      <GUIDAsString>{4da55d66-833a-41e4-8854-291a3da3ed1f}</GUIDAsString>
+      <GameName>Template</GameName>
+      <UniqueID>726875</UniqueID>
+      <GUIDAsString>{54cd24aa-3731-4503-9ad9-d8c6b4a0d0de}</GUIDAsString>
       <ColorDepth>TrueColor</ColorDepth>
       <Resolution>R640x480</Resolution>
       <GraphicsDriver>D3D9</GraphicsDriver>
@@ -58,7 +58,7 @@
       <DeveloperURL>http://www.t-vandepoele.be/rmi</DeveloperURL>
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
-      <SaveGameFolderName>test</SaveGameFolderName>
+      <SaveGameFolderName>Template</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
     </Settings>
     <InventoryHotspotMarker>
@@ -2136,7 +2136,7 @@
         <Name>SCUMM Verbcoin GUI</Name>
         <Description>Verbcoin GUI</Description>
         <Author>Tom Vandepoele</Author>
-        <Version>1.6.0</Version>
+        <Version>1.7.2</Version>
         <Key>713280048</Key>
         <IsHeader>False</IsHeader>
       </Script>

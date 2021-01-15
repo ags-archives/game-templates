@@ -1,7 +1,7 @@
 //===================================================================
 // *** AGS MODULE SCRIPT HEADER ***
 //
-// Module:  Scumm VerbCoin GUI v1.6.0
+// Module:  Scumm VerbCoin GUI v1.7.1
 //
 // Author:  Tom "Electroshokker" Vandepoele
 //
@@ -23,8 +23,13 @@
 // 2008-05-31 v1.5.4    Minor bugfix - Property action displayed in the @overhotspot@ label now shows correctly
 //                                     when moving over the verbcoin gui (sometimes it displayed the action label of
 //                                     the hotspot next to it
-// 2008-06-14 v1.5.x    Many bugfixes
+// 2008-05-31 v1.5.5    Minor bugfix - Fixed 'use % on %' not displaying the item name correctly when using 
+//                                     player.activeinventory in your script
 // 2008-06-15 v1.6.0    New feature: the entire module can be disabled with a simple function call
+// 2008-07-19 v1.7.0    New feature - default action text 
+//                      Bugfix - the correct custom action text is set when multiple instances exist on top of each other
+// 2008-07-20 v1.7.1    New feature - disable inventory
+// 2008-10-11 v1.7.2    Bugfix - large scrolling rooms now display verbcoin correctly
 //
 // 3 License
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -45,11 +50,12 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 //
-// Copyright (C) 2007 Tom Vandepoele
+// Copyright (C) 2007-2008 Tom Vandepoele
 //-------------------------------------------------------------------
 
 // module header
 
+enum DefaultAction { aLook, aTalk, aInteract, aCustom1, aCustom2, aCustom3 };
 enum ButtonChoice { bIdle, bLook, bTalk, bInteract, bCustom1, bCustom2, bCustom3 };
 
 struct SCUMM_VERBCOIN_GUI { 
@@ -63,10 +69,13 @@ struct SCUMM_VERBCOIN_GUI {
    import static function Inventory_GUI(int gInventory_ID,int gInvUnderlay_ID);
    import static function Verbcoin_GUI(int gVerbcoin_ID);
    import static function GoInventory();        //Opens and closes the inventory
+   import static function DisableInventory(bool value = false); //enables/disables the inventory
    import static function Select();             //Select item or use item on something else
    import static function Deselect();           //Deselect item or quit inventory
    import static function RunInteraction(CursorMode);
    import static function DisableVerbCoinGUI(bool value = false); //enables/disables the module
+   import static function UseDefaultAction(bool value = false); //use default action labels?
+   import static function SetDefaultAction(DefaultAction, String action_label); //set the default action label
 };
 
 import bool doubleclick;
